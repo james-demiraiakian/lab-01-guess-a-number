@@ -9,21 +9,24 @@
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Eagle+Lake&display=swap" rel="stylesheet">
     <title>Guess A Number</title>
 </head>
 
 <body>
-    <header>
-        <h1>Guess A Number</h1>
-    </header>
     <main>
-        <h3>Guess a number between 1 and 20. You have 4 attempts!</h3>
+        <h1>Guess A Number</h1>
+        <h3>Guess a number between 1 and 20. You have 4 attempts. Good luck!</h3>
         <input id="user-guess" type="number" placeholder="Guess">
-        <button id="guess-but">Guess!</button>
+        <div id="buttons">
+            <button id="guess-but">Guess!</button>
+            <button id="reset">Play Again!</button>
+        </div>
         <span id="trys">4 trys remain.</span>
-        <p>Number of Correct guesses: <span id="correct" type="number">0</span></p>
+        <p>Number of Correct guesses: <span id="correct">0</span></p>
         <span id="result"></span>
-        <button id="reset">Play Again!</button>
     </main>
 
     <script type="module" src="./app.js"></script>

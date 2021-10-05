@@ -8,9 +8,8 @@ let randNum = (Math.floor(Math.random() * 20)) + 1;
 
 let numGuess = 4;
 let guessResult;
-let numCorrectVal = numCorrect.value;
-console.log(numCorrectVal);
-console.log('Initial Random Number is', randNum);
+
+//console.log('Initial Random Number is', randNum);
 
   guessBut.addEventListener('click', ()=> {
     numGuess--;
@@ -20,9 +19,6 @@ console.log('Initial Random Number is', randNum);
     if (userGuessVal === randNum) {
       guessResult = 'Correct!';
       guessBut.disabled = true;
-      numCorrectVal++;
-      //console.log(numCorrectVal);
-      //numCorrect.textContent = Number(numCorrect.value);
     } else 
     if (numGuess === 0) {
       guessResult = 'Out of Guesses!';
@@ -44,5 +40,6 @@ console.log('Initial Random Number is', randNum);
     guessBut.disabled = false;
     trys.textContent = '4 trys remain.';
     randNum = (Math.floor(Math.random() * 20)) + 1;
-    console.log('New Random Number is', randNum);
+//    console.log('New Random Number is', randNum);
+    userGuess.value = null;
   });
